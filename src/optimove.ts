@@ -1,4 +1,6 @@
 import { camelToSnake } from './opti.util'
+import { optimoveSDK } from './vendor/sdk'
+window.optimoveSDK = optimoveSDK
 
 export interface OptimoveWebSDKCfg {
   tenantToken: string
@@ -40,9 +42,6 @@ export class OptimoveWebSDK {
   async init(): Promise<void> {
     if (!this.cfg.enabled || this.initDone) return
     this.initDone = true // like @_Memo, enforces "max 1 execution"
-
-    // @ts-ignore
-    await import(`./vendor/sdk.js`)
 
     await new Promise<void>(resolve => {
       window.optimoveSDK.initialize(this.cfg.tenantToken, this.cfg.configVersion, resolve, 'info')

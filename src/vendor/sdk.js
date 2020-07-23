@@ -1,7 +1,7 @@
 /* tslint:disable */
 
 "use strict";
-var optimoveSDK = function () {
+export const optimoveSDK = function () {
   // Kirill: added `https:` to the next line to fix usage in capacitor://
   const _sdkDomain = "https://sdk-cdn.optimove.net/", envKey = "990a6d8eb6cbb8ea44b73d21f1e473b43b9c74ea",
     eventPlatformIDKey = "0b006d8eb623b8ea11b73d61f1e483b47b9d7422",
