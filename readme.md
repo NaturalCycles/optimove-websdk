@@ -17,7 +17,10 @@
 - Typescript types built-in
 - Bundled, so, e.g ad-blockers won't block it just by url name
 - Loads config with hard-coded `https://` schema, which allows it to work under e.g `ionic://`,
-  `capacitor://`, `file://`, etc schemas.
+  `capacitor://`, `file://`, etc schemas
+- Allows to not care about `optimoveSDK.initialize`, since it's called lazily on first usage.
+- Allows to (hopefully) not care about "is it loaded yet?" problem
+- Zero dependencies, exports ESM / 🌲-shakeable
 
 # Usage
 

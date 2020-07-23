@@ -1,5 +1,3 @@
-import { _Memo } from '@naturalcycles/js-lib'
-
 export interface OptimoveWebSDKCfg {
   tenantToken: string
   configVersion: string
@@ -35,9 +33,11 @@ export class OptimoveWebSDK {
     console.log('[opt]', ...things)
   }
 
-  @_Memo()
+  private initDone = false
+
   async init(): Promise<void> {
-    if (!this.cfg.enabled) return
+    if (!this.cfg.enabled || this.initDone) return
+    this.initDone = true // like @_Memo, enforces "max 1 execution"
 
     // @ts-ignore
     await import(`./vendor/sdk.js`)
