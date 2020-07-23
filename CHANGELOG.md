@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/NaturalCycles/optimove-websdk/compare/v1.0.1...v1.1.0) (2020-07-23)
+
+
+### Features
+
+* bring snakes and camels onboard ([2d8713b](https://github.com/NaturalCycles/optimove-websdk/commit/2d8713bd92e27ee3d594ba2749f43efec3f74308))
+
 ## [1.0.1](https://github.com/NaturalCycles/optimove-websdk/compare/v1.0.0...v1.0.1) (2020-07-23)
 
 
