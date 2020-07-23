@@ -1,3 +1,5 @@
+import { camelToSnake } from './opti.util'
+
 export interface OptimoveWebSDKCfg {
   tenantToken: string
   configVersion: string
@@ -88,8 +90,14 @@ export class OptimoveWebSDK {
     if (!this.cfg.enabled) return
     await this.init()
 
-    window.optimoveSDK.API.reportEvent(event, params)
+    const eventSnake = camelToSnake(event)
+    const paramsSnake = {}
+    Object.entries(params).forEach(([k, v]) => {
+      paramsSnake[camelToSnake(k)] = v
+    })
 
-    this.log(`reportEvent ${event}`, params)
+    window.optimoveSDK.API.reportEvent(eventSnake, paramsSnake)
+
+    this.log(`reportEvent ${eventSnake}`, paramsSnake)
   }
 }
