@@ -18,8 +18,9 @@ export interface OptimoveSDK {
   }
 }
 
-declare global {
-  interface Window {
-    optimoveSDK: OptimoveSDK
-  }
-}
+// Currently it was decided to not expose it via window.*
+// declare global {
+//   interface Window {
+//     optimoveSDK: OptimoveSDK
+//   }
+// }

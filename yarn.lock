@@ -289,7 +289,7 @@
     move-file "^2.0.0"
     yargs "^15.1.0"
 
-"@naturalcycles/js-lib@^13.0.0":
+"@naturalcycles/js-lib@^13.0.0", "@naturalcycles/js-lib@^13.2.1":
   version "13.2.1"
   resolved "https://registry.yarnpkg.com/@naturalcycles/js-lib/-/js-lib-13.2.1.tgz#a698843097bdb47baf4bf98b957a837437604471"
   integrity sha512-yWH2vqc/ivlCxLadPHl1F+oyUlcd2bt1hUk7xg0o15s4D1cKHxc9v2iafE0twqS6LOohtIQuorQxQ/LESBhOTA==
@@ -3485,6 +3485,11 @@ tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+
+tslib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 
 tslint@^6.0.0:
   version "6.1.2"

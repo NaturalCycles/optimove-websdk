@@ -3,6 +3,10 @@
   "scripts": {
     "build-prod": "build-prod-esm-cjs"
   },
+  "dependencies": {
+    "@naturalcycles/js-lib": "^13.2.1",
+    "tslib": "^2.0.0"
+  },
   "devDependencies": {
     "@naturalcycles/dev-lib": "^10.16.0",
     "@naturalcycles/frontend-lib": "^2.3.1",

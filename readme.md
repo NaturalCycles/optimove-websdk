@@ -20,7 +20,7 @@
   `capacitor://`, `file://`, etc schemas
 - Allows to not care about `optimoveSDK.initialize`, since it's called lazily on first usage.
 - Allows to (hopefully) not care about "is it loaded yet?" problem
-- Zero dependencies, exports ESM / 🌲-shakeable
+- ~~Zero dependencies~~ (1 small dependency), exports ESM / 🌲-shakeable
 - Automatically handles `snakeToCamel`, `camelToSnake` case conversions when reporting events and custom properties
 
 # Usage

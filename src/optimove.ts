@@ -1,6 +1,6 @@
+import { _Memo } from '@naturalcycles/js-lib'
 import { camelToSnake } from './opti.util'
 import { optimoveSDK } from './vendor/sdk'
-window.optimoveSDK = optimoveSDK
 
 export interface OptimoveWebSDKCfg {
   tenantToken: string
@@ -37,14 +37,12 @@ export class OptimoveWebSDK {
     console.log('[opt]', ...things)
   }
 
-  private initDone = false
-
+  @_Memo()
   async init(): Promise<void> {
-    if (!this.cfg.enabled || this.initDone) return
-    this.initDone = true // like @_Memo, enforces "max 1 execution"
+    if (!this.cfg.enabled) return
 
     await new Promise<void>(resolve => {
-      window.optimoveSDK.initialize(this.cfg.tenantToken, this.cfg.configVersion, resolve, 'info')
+      optimoveSDK.initialize(this.cfg.tenantToken, this.cfg.configVersion, resolve, 'info')
     })
 
     this.log(`websdk initialized`)
@@ -54,18 +52,18 @@ export class OptimoveWebSDK {
     if (!this.cfg.enabled) return
     await this.init()
 
-    window.optimoveSDK.API.registerUser(accountId, email)
-
     this.log('registerUser', { accountId, email: !!email })
+
+    optimoveSDK.API.registerUser(accountId, email)
   }
 
   async setUserId(accountId: string): Promise<void> {
     if (!this.cfg.enabled) return
     await this.init()
 
-    window.optimoveSDK.API.setUserId(accountId)
-
     this.log(`setUserId ${accountId}`)
+
+    optimoveSDK.API.setUserId(accountId)
   }
 
   async setPageVisit(
@@ -76,13 +74,13 @@ export class OptimoveWebSDK {
     if (!this.cfg.enabled) return
     await this.init()
 
-    window.optimoveSDK.API.setPageVisit(url, pageTitle, pageCategory)
-
     this.log(`setPageVisit`, {
       url,
       pageTitle,
       pageCategory,
     })
+
+    optimoveSDK.API.setPageVisit(url, pageTitle, pageCategory)
   }
 
   async reportEvent(event: string, params: { [k: string]: any } = {}): Promise<void> {
@@ -95,8 +93,8 @@ export class OptimoveWebSDK {
       paramsSnake[camelToSnake(k)] = v
     })
 
-    window.optimoveSDK.API.reportEvent(eventSnake, paramsSnake)
-
     this.log(`reportEvent ${eventSnake}`, paramsSnake)
+
+    optimoveSDK.API.reportEvent(eventSnake, paramsSnake)
   }
 }
