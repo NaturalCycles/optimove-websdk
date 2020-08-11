@@ -2,7 +2,8 @@
   "extends": "@naturalcycles/frontend-lib/cfg/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "target": "es2017", // because Optimove sdk file uses `async ()` syntax anyway
+    // "target": "es2017", // because Optimove sdk file uses `async ()` syntax anyway
+    "target": "es2015", // to support Object destructuring, which is iOS 11.3+
     "allowJs": true
   },
   "include": ["src"],
