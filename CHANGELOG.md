@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.3...v1.1.4) (2020-08-11)
+
+
+### Bug Fixes
+
+* revert previous fix, false alarm ([ec07fea](https://github.com/NaturalCycles/optimove-websdk/commit/ec07fea05d55e94c1f35fe1781e851d8c53f9918))
+
 ## [1.1.3](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.2...v1.1.3) (2020-08-11)
 
 
