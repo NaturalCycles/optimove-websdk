@@ -10,7 +10,6 @@
   "devDependencies": {
     "@naturalcycles/dev-lib": "^10.16.0",
     "@naturalcycles/frontend-lib": "^2.3.1",
-    "@naturalcycles/nodejs-lib": "^10.6.2",
     "@types/node": "^14.0.24"
   },
   "files": [
