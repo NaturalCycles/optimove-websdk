@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "dist",
     // "target": "es2017", // because Optimove sdk file uses `async ()` syntax anyway
-    "target": "es2015", // to support Object destructuring, which is iOS 11.3+
+    // "target": "es2015", // to support Object destructuring, which is iOS 11.3+
+    "target": "es2017", // actually, Object destructuring is Stage4, so it's always transpiled. False alert:)
     "allowJs": true
   },
   "include": ["src"],
