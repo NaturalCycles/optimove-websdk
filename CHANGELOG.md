@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.2...v1.1.3) (2020-08-11)
+
+
+### Bug Fixes
+
+* support iOS 11.0-11.3 by transpiling down to es2015 ([ddad176](https://github.com/NaturalCycles/optimove-websdk/commit/ddad1768ca4077b56e17bee0d138a3bb07b7178e))
+
 ## [1.1.2](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.1...v1.1.2) (2020-07-23)
 
 
