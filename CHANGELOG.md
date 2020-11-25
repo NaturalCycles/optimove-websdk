@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.5...v1.1.6) (2020-11-25)
+
+
+### Bug Fixes
+
+* don't include src/vendor in npm published code ([931db9e](https://github.com/NaturalCycles/optimove-websdk/commit/931db9e3e9227e06f0ffd2a49c774c99a6fa6bfb))
+
 ## [1.1.5](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.4...v1.1.5) (2020-08-17)
 
 
