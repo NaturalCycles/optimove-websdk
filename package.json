@@ -16,6 +16,7 @@
     "dist",
     "dist-esm",
     "src",
+    "!src/vendor",
     "!src/test",
     "!src/**/*.test.ts",
     "!src/**/__snapshots__",

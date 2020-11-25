@@ -11,5 +11,5 @@ export function camelToSnake(s: string): string {
 }
 
 export function snakeToCamel(s: string): string {
-  return s.replace(/(_\w)/g, m => m[1].toUpperCase())
+  return s.replace(/(_\w)/g, m => m[1]!.toUpperCase())
 }
