@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.6...v1.2.0) (2021-04-04)
+
+
+### Features
+
+* modernize, use _snakeCase from js-lib ([f0cbf8b](https://github.com/NaturalCycles/optimove-websdk/commit/f0cbf8b6ebf5e9095b1b9dff24ac202e3fd8646d))
+
 ## [1.1.6](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.5...v1.1.6) (2020-11-25)
 
 
