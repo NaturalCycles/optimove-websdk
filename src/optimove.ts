@@ -1,5 +1,4 @@
-import { _Memo } from '@naturalcycles/js-lib'
-import { camelToSnake } from './opti.util'
+import { _Memo, _snakeCase } from '@naturalcycles/js-lib'
 import { optimoveSDK } from './vendor/sdk'
 
 export interface OptimoveWebSDKCfg {
@@ -87,10 +86,10 @@ export class OptimoveWebSDK {
     if (!this.cfg.enabled) return
     await this.init()
 
-    const eventSnake = camelToSnake(event)
+    const eventSnake = _snakeCase(event)
     const paramsSnake = {}
     Object.entries(params).forEach(([k, v]) => {
-      paramsSnake[camelToSnake(k)] = v
+      paramsSnake[_snakeCase(k)] = v
     })
 
     this.log(`reportEvent ${eventSnake}`, paramsSnake)
