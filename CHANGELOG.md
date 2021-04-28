@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/NaturalCycles/optimove-websdk/compare/v1.2.0...v1.2.1) (2021-04-28)
+
+
+### Bug Fixes
+
+* correct js-lib min version in dependencies ([d7f7206](https://github.com/NaturalCycles/optimove-websdk/commit/d7f720660cbb1ebba958b68053a8e892f3d2bcfc))
+
 # [1.2.0](https://github.com/NaturalCycles/optimove-websdk/compare/v1.1.6...v1.2.0) (2021-04-04)
 
 
