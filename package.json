@@ -4,7 +4,7 @@
     "build-prod": "build-prod-esm-cjs"
   },
   "dependencies": {
-    "@naturalcycles/js-lib": "^14.0.0",
+    "@naturalcycles/js-lib": "^14.20.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
