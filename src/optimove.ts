@@ -7,6 +7,7 @@ export interface OptimoveWebSDKCfg {
 
   /**
    * Set to false to silently disable Optimove.
+   *
    * @default true
    */
   enabled?: boolean

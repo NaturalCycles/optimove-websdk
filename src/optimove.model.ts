@@ -3,7 +3,7 @@ export interface OptimoveSDK {
   initialize(
     tenantToken: string,
     configVersion: string,
-    cb: Function,
+    cb: () => any,
     logLevel: 'info' | string,
   ): void
 
