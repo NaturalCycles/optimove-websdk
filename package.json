@@ -33,7 +33,7 @@
   "engines": {
     "node": ">=12.13.1"
   },
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Optimove WebSDK for humans",
   "author": "Natural Cycles Team",
   "license": "MIT"

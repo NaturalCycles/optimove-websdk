@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/NaturalCycles/optimove-websdk/compare/v1.2.1...v1.2.2) (2021-08-24)
+
+
+### Bug Fixes
+
+* deps ([69162dd](https://github.com/NaturalCycles/optimove-websdk/commit/69162dded040eedf22e4914e95cd09e574ef70ad))
+
 ## [1.2.1](https://github.com/NaturalCycles/optimove-websdk/compare/v1.2.0...v1.2.1) (2021-04-28)
 
 
