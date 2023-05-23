@@ -1,4 +1,4 @@
-import { _Memo, _snakeCase } from '@naturalcycles/js-lib'
+import { _Memo, _snakeCase, AnyObject, StringMap } from '@naturalcycles/js-lib'
 import { optimoveSDK } from './vendor/sdk'
 
 export interface OptimoveWebSDKCfg {
@@ -83,12 +83,12 @@ export class OptimoveWebSDK {
     optimoveSDK.API.setPageVisit(url, pageTitle, pageCategory)
   }
 
-  async reportEvent(event: string, params: { [k: string]: any } = {}): Promise<void> {
+  async reportEvent(event: string, params: AnyObject = {}): Promise<void> {
     if (!this.cfg.enabled) return
     await this.init()
 
     const eventSnake = _snakeCase(event)
-    const paramsSnake = {}
+    const paramsSnake: StringMap = {}
     Object.entries(params).forEach(([k, v]) => {
       paramsSnake[_snakeCase(k)] = v
     })

@@ -1,20 +1,20 @@
 // https://github.com/optimove-tech/Web-SDK-Integration-Guide
 export interface OptimoveSDK {
-  initialize(
+  initialize: (
     tenantToken: string,
     configVersion: string,
     cb: () => any,
     logLevel: 'info' | string,
-  ): void
+  ) => void
 
   API: {
-    registerUser(accountId: string, email: string): void
+    registerUser: (accountId: string, email: string) => void
 
-    setUserId(accountId: string): void
+    setUserId: (accountId: string) => void
 
-    setPageVisit(url: string, pageTitle: string, pageCategory: string): void
+    setPageVisit: (url: string, pageTitle: string, pageCategory: string) => void
 
-    reportEvent(event: string, params: { [k: string]: any }): void
+    reportEvent: (event: string, params: { [k: string]: any }) => void
   }
 }
 

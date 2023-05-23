@@ -5,13 +5,13 @@
     "build-prod": "build-prod-esm-cjs"
   },
   "dependencies": {
-    "@naturalcycles/js-lib": "^14.20.0",
-    "tslib": "^2.0.0"
+    "@naturalcycles/js-lib": "^14.153.2",
+    "tslib": "^2.5.2"
   },
   "devDependencies": {
-    "@naturalcycles/dev-lib": "^12.1.2",
-    "@naturalcycles/frontend-lib": "^2.3.1",
-    "@types/node": "^16.7.1"
+    "@naturalcycles/dev-lib": "^13.25.8",
+    "@naturalcycles/frontend-lib": "^4.0.0",
+    "@types/node": "^20.2.3"
   },
   "files": [
     "dist",
@@ -24,6 +24,7 @@
     "./dist-esm/vendor/sdk.js"
   ],
   "publishConfig": {
+    "provenance": true,
     "access": "public"
   },
   "repository": {
@@ -31,7 +32,7 @@
     "url": "https://github.com/NaturalCycles/optimove-websdk"
   },
   "engines": {
-    "node": ">=12.13.1"
+    "node": ">=18.12.0"
   },
   "version": "1.2.2",
   "description": "Optimove WebSDK for humans",
